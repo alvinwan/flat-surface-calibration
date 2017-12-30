@@ -1,14 +1,16 @@
 # Flat Surface Calibration
 Compute calibration for projection on flat surface, to sidestep affine
-distortions. Why would we want this? Say we project an image and that 
-we now place our finger on the projection. We wish to correspond our 
+distortions. Why would we want this? Say we project an image and we
+place a finger on the projected image. We wish to correspond our 
 finger, on the projected image, with the actual image on our computer. 
 This repository allows us to do that.
 
 Below are two demos that uses this "flat surface calibration":
+
 1. We take the camera input.
 2. Extract the projected checkerboard.
 3. We warp the extracted, projected checkerboard, so that it matches the original checkerboard.
+
 Finally, we project the new extracted checkerboard. In the first demo, notice
 we alternate between the original and a pale version (the projection 
 of the projected image!) and the original. For the second demo, the
